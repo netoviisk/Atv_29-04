@@ -1,0 +1,75 @@
+package demais;
+
+public class Conta {
+	public class Product {
+		
+	}
+		private String titular;
+		private double valor;
+		private int numero;
+		
+		public Conta(int numero2, String titular2) {
+		}
+		
+		public Conta(int numero2, String proprietario, double valor2) {
+		this.titular = proprietario;
+		this.valor = valor2;
+		this.numero = numero2;
+		}
+		
+		public Conta(String titular, double valor) {
+		this.titular = titular;
+		this.valor = valor;
+		}
+		
+		public String getName() {
+		return titular;
+		}
+		
+		public void setName(String titular) {
+		this.titular = titular;
+		}
+		
+		public double getPrice() {
+		return valor;
+		}
+		
+		public void setPrice(double valor) {
+		this.valor = valor;
+		}
+		
+		public int getQuantity() {
+		return numero;
+		}
+
+		public void valorDeposito(double valor2) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void valorSaque(double valor2) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void retirada1(double retiravalor) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void deposito1(double depvalor) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void deposito(double depvalor) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		public void retirada(double retiravalor) {
+			// TODO Auto-generated method stub
+			
+		}
+
+}
