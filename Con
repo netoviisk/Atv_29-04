@@ -1,0 +1,53 @@
+package defalt;
+
+import java.util.Locale;
+import java.util.Scanner;
+import demais.Conta;
+
+public class Conscon {
+	
+	public static void main(String[] args) {
+	
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		Conta conta;
+		
+		System.out.println("Entre com o Número da Conta: ");
+		int numero = sc.nextInt();
+		System.out.println("Entre com o Titular da Conta: ");
+		String titular = sc.nextLine();
+		
+		System.out.println("Deseja fazer um deposito inicial? (y/n): ");
+		char resposta = sc.next().charAt(0);
+		
+		if (resposta == 'y') {
+			System.out.println("Entre com o valor do Deposito: ");
+			double inicialdep = sc.nextDouble();
+			conta = new Conta (numero, titular);
+		}
+		else {
+			conta = new Conta(numero, titular);
+		}
+		
+		System.out.println();
+		System.out.println("Dados da Conta: ");
+		System.out.println(conta);
+		
+		System.out.println();
+		System.out.println("Entre com o valor de Deposito: ");
+		double depvalor = sc.nextDouble();
+		conta.deposito(depvalor);
+		System.out.println("Alteração da Conta: ");
+		
+		System.out.println(conta);
+		
+		System.out.println("Entre com o Número da Conta: ");
+		double retiravalor = sc.nextDouble();
+		conta.retirada(retiravalor);
+        System.out.println("Alteração da Conta: ");
+		
+		System.out.println(conta);
+		
+		
+	}
+	}
